@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Antonio Ferrer Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome CDN font icon CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head> 
+<body>
+    <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <i class="fas fa-a"></i>
+                    <div class="logo-text">Antonio Ferrer</div>
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navlinks">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Service</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>      
+           </header>
+           <div class="container">
+            <div class="hero-pic">
+                <img src="Profile.Pic.jpg" alt="Profile pic">
+            </div>
+            <div class="hero-text">
+                <h5>Hi I'm <span class="input"></span></h5>
+                <h1>Antonio Ferrer</h1>
+                <p>I'm Antonio, a web designer and eCommerce/sales consultant with over 3 years of experience. 
+                I specialize in creating visually appealing and user-friendly websites that drive sales and conversions.
+                Additionally, I mentor people starting their own businesses, providing guidance on topics such as market analysis, customer research, and business strategy.
+                If you're looking for a skilled web designer or eCommerce/sales consultant, feel free to contact me to discuss your project.
+                </p>
+
+                <div class="btn-group">
+                    <a href="tel:+17542218110" class="btn active">Call</a>
+                    <a href="mailto:tony607@outlook.com" class="btn">Email</a>
+                </div>
+            
+                <div class="social">
+                    <a href="https://www.facebook.com/profile.php?id=100070236517236"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/tonyf305/"><i class="fab fa-instagram"></i></a>
+                    <a href=""><i class="fab fa-linkedin"></i></a>
+                    <a href="https://twitter.com/TonyF954"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+           </div>
+        </div>
+    </div>
+    <!-- Typed.js for typing text effect -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+    <script>
+        /** creating button click show hide navbar **/
+        var togglebtn=document.querySelector(".togglebtn");
+        var nav=document.querySelector(".navlinks");
+        var links=document.querySelector(".navlinks li");
+
+        togglebtn.addEventListener("click", function(){
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
+        })
+
+        var typed=new Typed(".input",{
+            strings:["Frontend Developer" , "Web Designer" , "Business Mentor"],
+            typedspeed:70,
+            backspeed:75,
+            loop:true
+            
+        })
+    </script>
+</body>
+</html>
